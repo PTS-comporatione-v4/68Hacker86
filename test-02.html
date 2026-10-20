@@ -4,18 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CICADA 6845 // test 02</title>
-<!--
-  CICADA 6845 — TEST 02 (DRAFT, nenahraté).
-
-  1. BRÁNA: hráč zadá kľúč CICADA6845 (skladá ho v TEST 01 z 2 polovíc).
-  2. ODHALENIE: kľúč JE fragment 1.4 (jeden zo 40); derivovaný 1.4
-     z TEST 01 nikdy neplatil — bol to šum. "Co je pravda, moze klamat."
-  3. HÁDANKA FÁZY 2 (SCHVÁLENÉ 7.10.2026: hacker / token):
-     cesta A (pravá): hex 6861636b6572 → hacker; vydá fragmenty 2.1–2.4.
-     cesta B (pasca): caesar+3 wrnhq → token; vydá 2-znakový mini kúsok.
-  Umiestnenie: NOVÉ repo na NOVOM GitHub účte (7.10.2026).
-  CISLO_FAZY = 2.
--->
+<!-- CICADA 6845 — TEST 02. -->
 <style>
   body { background:#0a0a0a; color:#c8c8c8; font-family:Georgia,serif;
          max-width:640px; margin:8vh auto; padding:0 24px; line-height:1.7; }
@@ -72,7 +61,7 @@
   Fragmentov je 40. Bez všetkých sa na koniec nedostaneš.
 </div>
 
-<!-- ================= CESTA A (pravá, DRAFT) ================= -->
+<!-- ================= CESTA A ================= -->
 <div class="cesta">
 <h2>CESTA A</h2>
 <div class="hadanka">
@@ -86,7 +75,7 @@
 <div class="vysledok" id="vyslA"></div>
 </div>
 
-<!-- ================= CESTA B (pasca, DRAFT) ================= -->
+<!-- ================= CESTA B ================= -->
 <div class="cesta">
 <h2>CESTA B</h2>
 <div class="hadanka">
@@ -109,7 +98,7 @@
 </div><!-- /obsah -->
 
 <script>
-// SCHVÁLENÉ 7.10.2026 — hashe platia pre slová hacker / token a kľúč CICADA6845.
+// SCHVÁLENÉ 7.10.2026 — variant A.
 // CISLO_FAZY = 2 sa NESMIE meniť (je súčasťou hashov).
 const CISLO_FAZY = 2;
 const REALNA = "A";
